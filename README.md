@@ -9,6 +9,7 @@
 
 the second arduino(main) will handle the entire sensors in the mobot and the Motor driver, and uses the commands from the first arduino to control the modes via RC tranceiver.
 
+ the RC tranceiver is a digital tranceiver which consists of 6 buttons for transmission and 6 output(M1,M2, and M3) to receiver
 -  Sensors
 
 The sensors used in this project is the photoelectric sensor for line tracking and an E18-D80NK Proximity sensor for Distance detection. photoelectric sensors consists of 8 channels at the front and 1 each at the back corners(left and rignt). for digital interpretation of the lne tracking sensor, we use a LM339 voltage comparator to convert its analog output into digital. for LED indicators. it uses an OR gate, configured as buffer to drive the output of the voltage comparator because its output is open collector. both voltage comparator modules for front and back sensors are separated to make the wirings easier to connect. also, both sensors have independent Reference voltage for calibration
@@ -22,4 +23,4 @@ f
 
 - Connection
 
-for reliable contact, we use a JST XH connectos since it is easier when it comes to removing, or plugging the module in rather than using a jummper wires, which can be unreliable due to vibration.
+for a reliable connection, we use a JST XH connectors since it is easier when it comes to removing, or plugging the module in rather than using a jummper wires, which can be unreliable when it comes to vibration.
