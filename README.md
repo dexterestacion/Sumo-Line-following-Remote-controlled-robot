@@ -24,8 +24,12 @@ both LED indicators for 8 and 2 channel sensors are combine in a single module, 
 
  ### Actuators
 
- This project only consists of 2 actuators, which is the DC gear motor, it is a SGM25-370, rated for 12V and has an rpm of 915RPM.
+ This project only consists of 2 actuators, which is the DC gear motor, a SGM25-370 rated for 12V and has a max speed of around 915RPM.
 
 ### Connection
 
 for a reliable connection, we use a JST XH connectors since it is easier when it comes to removing, or plugging the module in rather than using a jummper wires, which can be unreliable when it comes to vibration.
+
+### Supply
+
+for the supply, we utilize 4 18650 batteries in series, a designed PCB is used to add a switch and a terminal block so that it is easy to change the connection, an LM7805 Voltage regulator is used to power low voltage devices such as Sensors, Microcontroller, and for Motor driver shield's control.
